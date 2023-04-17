@@ -15,6 +15,7 @@ def print_occurrences(output):
     print(' '.join(map(str, output)))
 
 def get_occurrences(pattern, text):
+    #test
     p = 31
     m = len(pattern)
     n = len(text)
