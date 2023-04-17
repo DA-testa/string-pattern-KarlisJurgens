@@ -10,9 +10,10 @@ def read_input():
             F_return = (l1, l2)
             return F_return
     if choice == "I":
-        text = input().rstrip()
         pattern = input().rstrip()
+        text = input().rstrip()
         return (pattern, text)
+
 def print_occurrences(output):
     print(' '.join(map(str, output)))
 
