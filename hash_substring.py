@@ -1,16 +1,18 @@
 # python3
 
 def read_input():
-    choice = input()
+    choice = input().rstrip()
 
     if choice == "F":
-        with open('/workspaces/string-pattern-KarlisJurgens/tests/06.txt', 'r') as file:
+        with open('tests/06.txt', 'r') as file:
             l1 = file.readline().rstrip()
             l2 = file.readline().rstrip()
             F_return = (l1, l2)
             return F_return
-    if choice== "I":
-        return (input().rstrip(), input().rstrip())
+    if choice == "I":
+        text = input().rstrip()
+        pattern = input().rstrip()
+        return (pattern, text)
 def print_occurrences(output):
     print(' '.join(map(str, output)))
 
